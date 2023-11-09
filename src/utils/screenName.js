@@ -7,7 +7,9 @@ const animalesStack = {
 
 const cuentaStack = {
     tab: "cuentaTab",
-    cuenta: "cuenta"
+    cuenta: "cuenta",
+    login: "login",
+    register: "registrar"
 }
 
 const formularioStack = {
