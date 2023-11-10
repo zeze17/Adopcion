@@ -3,12 +3,12 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     image: {
         resizeMode: "contain",
-        height: 150,
+        height: 200,
         width: "100%",
         marginBottom: 40
     },
     content :{
-        marginHorizontal:40,
+        marginHorizontal:30,
     },
     textRegister:{
         marginTop: 15,

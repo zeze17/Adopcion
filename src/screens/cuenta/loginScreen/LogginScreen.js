@@ -19,7 +19,7 @@ export function LogginScreen() {
       <View style={styles.content}>
         <LoginForm />
         <Text style={styles.textRegister}>
-        ¿Aun no tienes Cuenta? <Text style={styles.btnTegister} onPress={goToRegister}>Registrarse</Text>
+        ¿Aun no tienes Cuenta? <Text style={styles.btnTegister} onPress={goToRegister}>Unase</Text>
         </Text>
       </View>     
 
