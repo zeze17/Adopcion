@@ -25,8 +25,10 @@ export function RegisterForm() {
         const auth = getAuth();
         await createUserWithEmailAndPassword(
           auth,
+          formValue.nombre,
+          formValue.telefono,
           formValue.email,
-          formValue.password
+          formValue.password,
         );
         navigation.navigate(screen.cuenta.cuenta);
       } catch (error) {
@@ -42,6 +44,31 @@ export function RegisterForm() {
 
   return (
     <View style={styles.content}>
+
+      <Input
+        placeholder="Nombre"
+        containerStyle={styles.input}
+        rightIcon=<Icon
+          type="material-community"
+          name="account"
+          iconStyle={styles.icon}
+        />
+        onChangeText={(text) => formik.setFieldValue("nombre", text)}
+        errorMessage={formik.errors.nombre}
+      />
+
+      <Input
+        placeholder="Telefono"
+        containerStyle={styles.input}
+        rightIcon=<Icon
+          type="material-community"
+          name="phone"
+          iconStyle={styles.icon}
+        />
+        onChangeText={(text) => formik.setFieldValue("telefono", text)}
+        errorMessage={formik.errors.telefono}
+      />
+
       <Input
         placeholder="Correo Electronico"
         containerStyle={styles.input}

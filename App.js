@@ -5,6 +5,7 @@ import {NavigationContainer} from "@react-navigation/native"
 import {AppNavigation} from "./src/navigation/AppNavigation"
 import Toast from "react-native-toast-message"; 
 import {initFirebase} from "./src/utils";
+import 'react-native-gesture-handler';
 
 LogBox.ignoreAllLogs();
 

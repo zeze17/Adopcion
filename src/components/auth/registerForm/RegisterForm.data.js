@@ -2,6 +2,8 @@ import * as Yup from 'yup'
 
 export function initialValues() {
     return {
+        nombre:"",
+        telefono:"",
         email:"",
         password:"",
         repeatPassword:"",

@@ -8,7 +8,7 @@ import {styles} from './registerScreen.style'
 export function RegisterScreen() {
   return (
     <KeyboardAwareScrollView>
-     <Image source = {require("../../../../assets/img/perro-flor.jpg")} style= {styles.image}/>
+     <Image source = {require("../../../../assets/img/imagen2.jpg")} style= {styles.image}/>
      <View style={styles.content}>
        < RegisterForm />
       </View> 
