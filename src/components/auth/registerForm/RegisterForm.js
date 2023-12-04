@@ -25,10 +25,8 @@ export function RegisterForm() {
         const auth = getAuth();
         await createUserWithEmailAndPassword(
           auth,
-          formValue.nombre,
-          formValue.telefono,
           formValue.email,
-          formValue.password,
+          formValue.password
         );
         navigation.navigate(screen.cuenta.cuenta);
       } catch (error) {

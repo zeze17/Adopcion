@@ -2,7 +2,9 @@
 const animalesStack = {
     tab: "AnimalesTab",
     animales: "Animales",
-    addAnimales: "addAnimales"
+    addAnimales: "addAnimales",
+    detail: "DetailsScreen",
+    home: "HomeScreen"
 }
 
 const cuentaStack = {
