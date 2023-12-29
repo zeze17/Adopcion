@@ -4,6 +4,7 @@ import {getAuth, onAuthStateChanged} from 'firebase/auth';
 import {UserGuestScreen} from "./userGuestScreen/UserGuestScreen";
 import {UsuarioLogeadoScreen} from "./UsuarioLogeadoScreen";
 import {LoadingModal} from "../../components"
+import {UserLoggerScreen} from "./userLoggerScreen/UserLoggerScreen";
 
 
 export function CuentaScreen() {
@@ -20,5 +21,5 @@ export function CuentaScreen() {
       return <LoadingModal show= {true} text= "Cargando"/>
   }
   
-  return hasLogged ? <UsuarioLogeadoScreen /> : <UserGuestScreen />;
+  return hasLogged ? <UserLoggerScreen /> : <UserGuestScreen />;
 }
