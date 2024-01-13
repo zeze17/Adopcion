@@ -1,23 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 import { LogBox } from "react-native";
-import {NavigationContainer} from "@react-navigation/native"
-import {AppNavigation} from "./src/navigation/AppNavigation"
-import Toast from "react-native-toast-message"; 
-import {initFirebase} from "./src/utils";
-import 'react-native-gesture-handler';
+import { NavigationContainer } from "@react-navigation/native";
+import Toast from "react-native-toast-message";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+import "react-native-gesture-handler";
+import { CuentaStack } from "./src/navigation/CuentaStack";
+
+const Drawer = createDrawerNavigator();
 
 LogBox.ignoreAllLogs();
 
 export default function App() {
+  const Drawer = createDrawerNavigator();
   return (
-      <>
-        <NavigationContainer>
-          <AppNavigation />
-        </NavigationContainer>
-        <Toast/>
-      </>
+    <>
+      <NavigationContainer>
+        <CuentaStack />        
+      </NavigationContainer>
+      <Toast />
+    </>
   );
 }
-
-

@@ -39,6 +39,10 @@ export function LoginForm() {
     },
   });
 
+  const goToRegister=() =>{
+    navigation.navigate('animalsStack')
+  };
+
   return (
     <View containerStyle={styles.content}>
       <Input
@@ -69,7 +73,8 @@ export function LoginForm() {
         title="Iniciar sesion"
         containerStyle={styles.btnContainer}
         buttonStyle={styles.btnStyle}
-        onPress={formik.handleSubmit}
+        // onPress={formik.handleSubmit}
+        onPress={goToRegister}
         loading={formik.isSubmitting}
       />
     </View>
