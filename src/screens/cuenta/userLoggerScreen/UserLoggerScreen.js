@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View } from "react-native";
 import { Button } from "react-native-elements";
-import { InfoUser } from "../../../components/account";
+import { InfoUser, AccountOptions } from "../../../components/account";
 import { LoadingModal } from "../../../components";
 import { getAuth, signOut } from "firebase/auth";
 import { styles } from "./UserLoggerScreen.styles";
@@ -18,7 +18,7 @@ export function UserLoggerScreen() {
   return (
     <View style={styles.content}>
       <InfoUser setloading={setloading} setloadingText={setloadingText} />
-
+      <AccountOptions/>
       <Button
         title="Cerrar Sesion"
         buttonStyle={styles.button}
