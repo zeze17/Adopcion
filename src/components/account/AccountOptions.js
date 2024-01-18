@@ -11,11 +11,11 @@ export function AccountOptions() {
     const [renderComponent, setrenderComponent] = useState(null);
     
 
-    const onCloseOpenModal = () => setShowModal((prevState)=> !prevState);
+    const onCloseOpenModal = () => setShowModal( (prevState)=> !prevState);
 
     const selectedComponent = (key) => {
         if (key === "displayName") {
-            setrenderComponent(<ChangeDisplayName onClose={onCloseOpenModal}/>);
+            setrenderComponent(<ChangeDisplayName onClose={onCloseOpenModal} />);
         }
         if (key === "email") {
             setrenderComponent(<Text>Cambiar email</Text>);
