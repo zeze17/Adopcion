@@ -13,7 +13,6 @@ import {
 } from "react-native";
 import COLORS from "../../const/colors";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
-import pets from "../../const/pets";
 const { height } = Dimensions.get("window");
 const petCategories = [
   { name: "CATS", icon: "cat" },
