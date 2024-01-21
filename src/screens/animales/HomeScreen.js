@@ -70,16 +70,6 @@ const HomeScreen = ({ navigation }) => {
 
   return (
     <SafeAreaView style={{ flex: 1, color: COLORS.white }}>
-      {/* <View style={style.header}>
-        <Icon name="sort-variant" size={28} onPress={navigation.toggleDrawer} />
-        <Text style={{color: COLORS.primary, fontWeight: 'bold', fontSize: 16}}>
-          JANE GARY
-        </Text>
-        <Image
-          source={require('../../../assets/img/person.jpg')}
-          style={{height: 30, width: 30, borderRadius: 25}}
-        />
-      </View> */}
       <View style={style.mainContainer}>
         {/* Render the search inputs and icons */}
         <View style={style.searchInputContainer}>
